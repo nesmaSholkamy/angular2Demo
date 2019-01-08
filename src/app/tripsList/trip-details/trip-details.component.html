@@ -1,0 +1,14 @@
+<div class="animationload" *ngIf = !data>
+    <div class="osahanloading"></div>
+</div>
+<!-- single trip details -->
+<div class="card" *ngIf = "item">
+  <img class="card-img-top img-fluid" src="../../../assets/images/img5.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">Trip Name</h4>
+    <p class="card-text">Ride ID: {{item?.rideId}}</p>
+    <p class="card-text">Member ID: {{item?.memberId}}</p>
+    <p class="card-text">Seats Available: {{item?.seatsOffered}}</p>
+    <p class="card-text">Start Date: {{item?.travelStartDate}}</p>
+  </div>
+</div>
